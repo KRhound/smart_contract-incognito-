@@ -1,0 +1,66 @@
+{
+	"id": "50a7facf52dcd4e346fa8c53fcf03ce5",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/SimpleStorage.sol": {
+				"content": "pragma solidity 0.6.0;"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"contracts/SimpleStorage.sol": {
+				"ast": {
+					"absolutePath": "contracts/SimpleStorage.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:22:0"
+						}
+					],
+					"src": "0:22:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
