@@ -1,0 +1,287 @@
+{
+	"id": "9ef9aa33d76ea4afb595a45957b2054e",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.0",
+	"solcLongVersion": "0.6.0+commit.26b70077",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/StorageFactory.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity ^0.6.0;\r\n\r\ncontract StorageFactory {\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/StorageFactory.sol": {
+				"StorageFactory": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/StorageFactory.sol\":66:100  contract StorageFactory {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"contracts/StorageFactory.sol\":66:100  contract StorageFactory {\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/StorageFactory.sol\":66:100  contract StorageFactory {\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220a6fec64505bd6893187f87fb042c8e43f0c87d9dbd40e4a48ad485cb134c0aa764736f6c63430006000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a6fec64505bd6893187f87fb042c8e43f0c87d9dbd40e4a48ad485cb134c0aa764736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xA6 INVALID 0xC6 GASLIMIT SDIV 0xBD PUSH9 0x93187F87FB042C8E43 CREATE 0xC8 PUSH30 0x9DBD40E4A48AD485CB134C0AA764736F6C63430006000033000000000000 ",
+							"sourceMap": "66:34:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:34:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220a6fec64505bd6893187f87fb042c8e43f0c87d9dbd40e4a48ad485cb134c0aa764736f6c63430006000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xA6 INVALID 0xC6 GASLIMIT SDIV 0xBD PUSH9 0x93187F87FB042C8E43 CREATE 0xC8 PUSH30 0x9DBD40E4A48AD485CB134C0AA764736F6C63430006000033000000000000 ",
+							"sourceMap": "66:34:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "POP"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "DUP1"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 66,
+									"end": 100,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220a6fec64505bd6893187f87fb042c8e43f0c87d9dbd40e4a48ad485cb134c0aa764736f6c63430006000033",
+									".code": [
+										{
+											"begin": 66,
+											"end": 100,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 66,
+											"end": 100,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 66,
+											"end": 100,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 66,
+											"end": 100,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 66,
+											"end": 100,
+											"name": "DUP1"
+										},
+										{
+											"begin": 66,
+											"end": 100,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/StorageFactory.sol\":\"StorageFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/StorageFactory.sol\":{\"keccak256\":\"0x26e0d695d4ea4d981c8c96b7f794773b3b0eaafea6cd10330628cb59d96d3044\",\"urls\":[\"bzz-raw://99a45db6b282067083484eaf7915f03299abaafb41c15aff2ecd9b19ffa57215\",\"dweb:/ipfs/QmWvQnQaZ5qqCwfBC39276kD4vgcAhf3UQRNEUDDr8HCrm\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/StorageFactory.sol": {
+				"ast": {
+					"absolutePath": "contracts/StorageFactory.sol",
+					"exportedSymbols": {
+						"StorageFactory": [
+							2
+						]
+					},
+					"id": 3,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "39:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "StorageFactory",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "66:34:0"
+						}
+					],
+					"src": "39:61:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

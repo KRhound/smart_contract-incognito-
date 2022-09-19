@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.6.0+commit.26b70077"
+		"version": "0.7.0+commit.9e61f92b"
 	},
 	"language": "Solidity",
 	"output": {
@@ -94,10 +94,14 @@
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
@@ -117,10 +121,11 @@
 	},
 	"sources": {
 		"contracts/SimpleStorage.sol": {
-			"keccak256": "0x7e5b2169ff73e31b64e173ef3dc1e5a784a1a654cbd854a1769ff902932a3dfa",
+			"keccak256": "0xbe7a16bc24799a20fb5f7c63e9aea8dc7df1a2145ff6f9aefb9a534188dbbbbd",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a27cfa0ac6663b8bbf6f2b268e0a2c5f07c431bd744b4e68f7bbc52e54d97ffa",
-				"dweb:/ipfs/QmNyiseRbupTqsAWWrHzsDXQzJcx2pWf9DFuFyoMQbbDdA"
+				"bzz-raw://c80b2a1ecb37ef1efed6fd1cd055de141a886082a0a2f6fb432f96817b8f42ce",
+				"dweb:/ipfs/QmRWApVLYSB1omza9dXVtxrnsSAAQnsLtR6W7Xjsue4yAD"
 			]
 		}
 	},
