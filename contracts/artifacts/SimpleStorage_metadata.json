@@ -24,19 +24,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -130,10 +117,10 @@
 	},
 	"sources": {
 		"contracts/SimpleStorage.sol": {
-			"keccak256": "0xa3afff3f6e8a9369b130e521309082fb08805f885a2e77b2e9c3380d1abdd65e",
+			"keccak256": "0x7e5b2169ff73e31b64e173ef3dc1e5a784a1a654cbd854a1769ff902932a3dfa",
 			"urls": [
-				"bzz-raw://a0d723df20e44840dea69fc98ad595d4bcafecc26cda2b0b818cf7a3edbf7750",
-				"dweb:/ipfs/Qmd4PZZihUKdHkL3Ls2i9tEASmMGtf7Szo2k36GgGm6A6m"
+				"bzz-raw://a27cfa0ac6663b8bbf6f2b268e0a2c5f07c431bd744b4e68f7bbc52e54d97ffa",
+				"dweb:/ipfs/QmNyiseRbupTqsAWWrHzsDXQzJcx2pWf9DFuFyoMQbbDdA"
 			]
 		}
 	},
