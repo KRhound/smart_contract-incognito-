@@ -1,15 +1,89 @@
 {
 	"compiler": {
-		"version": "0.7.0+commit.9e61f92b"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "createSimpleStorageContract",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -67,6 +141,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -84,7 +171,7 @@
 		"compilationTarget": {
 			"contracts/StorageFactory.sol": "StorageFactory"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -105,11 +192,11 @@
 			]
 		},
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0xb611eb9f7689daa2955d23012a4114eeeec625ca73ca27f4a2d78b152ee79a0d",
+			"keccak256": "0xb848b8fbebf8dbdd42db0e3d62316ee70f3bba4a09302837237dfcab143c2043",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a176d180c00bf107bb2016af0e117c8079674e5fe52f03b11f329c892e04e711",
-				"dweb:/ipfs/QmfJeLCGBrisXcfLtEVoajFMjrA2QFNdunoYtKGaf5HrUt"
+				"bzz-raw://da5332672d51f4946ae398cc8d267179b280f2a3c2a94472aee0909328a6ecea",
+				"dweb:/ipfs/QmNmRHwXcWJfLPiWbYaMSMU3E8pt2STCjbcwnRkX8ZY4f7"
 			]
 		}
 	},
