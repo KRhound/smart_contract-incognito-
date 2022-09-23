@@ -2,6 +2,8 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
+import "@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol";
+
 interface AggregatorV3Interface {
 
   function decimals() external view returns (uint8);
@@ -32,6 +34,7 @@ interface AggregatorV3Interface {
 }
 
 contract FundMe {
+  using SafeMathChainlink for uint256;
 
   mapping(address => uint256) public addressToAmountFunded;
 
