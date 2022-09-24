@@ -2,46 +2,28 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
+import "@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol";
 import "@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol";
-
-interface AggregatorV3Interface {
-
-  function decimals() external view returns (uint8);
-  function description() external view returns (string memory);
-  function version() external view returns (uint256);
-  function getRoundData(uint80 _roundId)
-    external
-    view
-    returns (
-      uint80 roundId,
-      int256 answer,
-      uint256 startedAt,
-      uint256 updatedAt,
-      uint80 answeredInRound
-    );
-
-  function latestRoundData()
-    external
-    view
-    returns (
-      uint80 roundId,
-      int256 answer,
-      uint256 startedAt,
-      uint256 updatedAt,
-      uint80 answeredInRound
-    );
-
-}
 
 contract FundMe {
   using SafeMathChainlink for uint256;
 
   mapping(address => uint256) public addressToAmountFunded;
+  address[] public funders;
+  address public owner;
+
+  constructor() /*public = 0.7.0이후 버전에는 더이상 필요 x*/ {
+    owner = msg.sender;
+  }
 
   function fund() public payable {
     // $50
+    uint256 mimimumUSD = 50 * 10 * 18;
+    // 1gwei < $50
+    require(getConversionRate(msg.value) >= mimimumUSD, "You need to spend more ETH");
     addressToAmountFunded[msg.sender] += msg.value;
-    // what the ETH -> USD conversion rate 
+    // what the ETH -> USD conversion rate
+    funders.push(msg.sender);
   }
 
   function getVersion() public view returns (uint256) {
@@ -62,4 +44,20 @@ contract FundMe {
     return ethAmountInUsd;
   }
 
+  modifier onlyOwner {
+    // only want the contract admin/owner
+    require(msg.sender == owner);
+    _;
+  }
+
+  function withdraw() payable public{
+    // msg.sender.transfer(address(this).balance); (변경) -> 
+    payable(msg.sender).transfer(address(this).balance);
+    
+    for (uint256 funderIndex=0; funderIndex < funders.length; funderIndex++){
+      address funder = funders[funderIndex];
+      addressToAmountFunded[funder] = 0;
+    }
+    funders = new address[](0);
+  }
 }

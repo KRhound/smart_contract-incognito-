@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.17+commit.8df45f5f"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -145,11 +145,11 @@
 	},
 	"sources": {
 		".deps/npm/@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol": {
-			"keccak256": "0xccf021a8fdae1d6751db7bbc34ff86cfe6a862244499b50ca6809bef029c90ef",
+			"keccak256": "0x02414b8b2f14d5428bf2a5b342e6a18d56d51b0b0320706973c8b7c8e145c526",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://fe5a8bbbff73ce2e01ebbf0b889e21cd14cd1b22615c1c994fe48e7daa2f3c60",
-				"dweb:/ipfs/QmYtKNbupxa6cGkvtiHaPwfaL9yNytEPWYUgC3Seei19wE"
+				"bzz-raw://8bcaa51fb79d9c335c89d4ed20b3b41ef3e48217d430ce6889f0f740300941be",
+				"dweb:/ipfs/Qmbhik2VWY2HV53ypfTxekhFYU1LEBSuXw9gCa4ZQYWr9L"
 			]
 		}
 	},

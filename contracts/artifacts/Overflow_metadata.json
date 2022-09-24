@@ -15,7 +15,7 @@
 						"type": "uint8"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -47,11 +47,11 @@
 	},
 	"sources": {
 		"contracts/Overflow.sol": {
-			"keccak256": "0xff82ca2ed0a887b4e759afa3f5f7f359123fbdc5620dc940c9b424f62925497c",
+			"keccak256": "0xf2bcb790b92875d4ef2c1adfed26be3df8a48595caa35c2c5a9a646f53d4fe1e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cf46aacf945573a85d66871243fc5880e0acad21efe2ed7fe61dacdbec94a371",
-				"dweb:/ipfs/QmVEjFAbp3fzLQP9fsQWWGryZj1L6ooTAC9xhYumgoLLVA"
+				"bzz-raw://15288d3f2b377cafa98531ed800cf28ce16ba56bee184b39659779079084ddb3",
+				"dweb:/ipfs/Qmbd3zQVw31Te8o5RVBD4ZHBU2cBXmDcTpBpPASRwVhGUj"
 			]
 		}
 	},
